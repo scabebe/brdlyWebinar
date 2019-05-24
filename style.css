@@ -78,7 +78,25 @@ strong {
 h1.headline {color: #63666A; font-size: 47px; line-height: 50px; font-weight: bold; margin-bottom: 15px;}
 h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; margin: 0 auto;}
 
+/* ----------------- main content ----------------- */
+.mainContentWrapper { text-align: center;}
+.mainContentWrapper::before {background-image: url(images/webinar-bodyBG.png); background-position: center 180%; background-repeat: repeat-x;  opacity:0.4;
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -2;}
+  
+.videoWrapper {overflow:hidden; padding-bottom:56.25%; position:relative; height:0; margin-bottom: 55px;}
+.videoWrapper iframe{ left:0; top:0; height:100%; width:100%; position:absolute;}
+.yellowBtn {margin-bottom: 125px;}
 .yellowBtn a {background: #f1b300; font-size: 16px; line-height: 22px; font-weight: 600; display: inline-block; color: #ffffff; text-decoration: none; padding: 18px 70px 18px 35px; border-radius: 5px; background-image: url("https://go.broadly.com/l/710993/2019-05-15/6hx7/710993/12598/poolCleaners_yellowBtnArrow.png"); background-position: 85% center; background-repeat: no-repeat;}
+.mainContentCopy  {font-size: 25px; line-height: 40px; color: #63666A;}
+
+
 
 
 /* --------------- 1024px --------------- */
