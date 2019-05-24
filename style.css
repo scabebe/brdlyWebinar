@@ -28,10 +28,10 @@ footer, header, hgroup, menu, nav, section {
 
 body {
   background: #fff;
-  font-family: Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 16px;
-  line-height: 24px;
-  color: #333; }
+  line-height: 25px;
+  color: #6C6C6C; }
 
 ol, ul {
   list-style: disc outside; }
@@ -69,6 +69,18 @@ strong {
 .right {float: right;}
 .center {text-align: center;}
 
+/* ----------------- header ----------------- */
+.headerWrapper {background: #414042; padding: 25px 0;}
+.logo {text-align: left;}
+.logo img {width: 180px; height: auto;}
+
+.headerCopyWrapper {text-align: center; padding: 95px 0 50px;}
+h1.headline {color: #63666A; font-size: 47px; line-height: 50px; font-weight: bold; margin-bottom: 15px;}
+h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; margin: 0 auto;}
+
+.yellowBtn a {background: #f1b300; font-size: 16px; line-height: 22px; font-weight: 600; display: inline-block; color: #ffffff; text-decoration: none; padding: 18px 70px 18px 35px; border-radius: 5px; background-image: url("https://go.broadly.com/l/710993/2019-05-15/6hx7/710993/12598/poolCleaners_yellowBtnArrow.png"); background-position: 85% center; background-repeat: no-repeat;}
+
+
 /* --------------- 1024px --------------- */
 @media only screen and (max-width: 1024px) {
 	.container {width: 100% !important; }
@@ -79,6 +91,7 @@ strong {
 }
 /* --------------- 768px --------------- */
 @media only screen and (max-width: 768px) {
+  h2.subhead {width: 100%;}
 	}
 /* --------------- 480px --------------- */
 @media only screen and (max-width: 480px) {
