@@ -68,6 +68,7 @@ strong {
 .left {float: left;}
 .right {float: right;}
 .center {text-align: center;}
+h3 {line-height: 34px;font-size: 25px; font-weight: 400;}
 
 /* ----------------- header ----------------- */
 .headerWrapper {background: #414042; padding: 25px 0;}
@@ -79,7 +80,7 @@ h1.headline {color: #63666A; font-size: 47px; line-height: 50px; font-weight: bo
 h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; margin: 0 auto;}
 
 /* ----------------- main content ----------------- */
-.mainContentWrapper { text-align: center;}
+.mainContentWrapper { text-align: center; margin-bottom: 85px;}
 .mainContentWrapper::before {background-image: url(images/webinar-bodyBG.png); background-position: center 180%; background-repeat: repeat-x;  opacity:0.4;
   content: "";
   display: block;
@@ -96,6 +97,15 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 .yellowBtn a {background: #f1b300; font-size: 16px; line-height: 22px; font-weight: 600; display: inline-block; color: #ffffff; text-decoration: none; padding: 18px 70px 18px 35px; border-radius: 5px; background-image: url("https://go.broadly.com/l/710993/2019-05-15/6hx7/710993/12598/poolCleaners_yellowBtnArrow.png"); background-position: 85% center; background-repeat: no-repeat;}
 .mainContentCopy  {font-size: 25px; line-height: 40px; color: #63666A;}
 
+/* ----------------- Bullets with image ----------------- */
+.bulletsWithImageWrapper {margin-bottom: 145px;}
+.bulletsFlex {display: flex; align-items: center; justify-content: space-between;}
+.bulletsFlex section {margin: 0 10px;}
+
+.bulletsTitle { margin-bottom: 15px; padding-left: 40px;}
+.bullets ul { list-style-type: none;}
+.bullets ul li {background-image: url('images/webinar-logos-Checkmark.svg'); background-repeat: no-repeat; background-size: 30px auto; background-position:0 0; margin-bottom: 24px; padding-bottom: 6px; padding-left: 40px;}
+.bullets ul li:last-of-type {margin-bottom: 0;}
 
 
 
@@ -106,12 +116,17 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 	.left {width: 100% !important; float: none !important;}
 	.right {width: 100% !important; float: none !important;}
 	.clearfloats {clear: both !important;}
+	.bulletsFlex {align-items: flex-start;}
 }
 /* --------------- 768px --------------- */
 @media only screen and (max-width: 768px) {
   h2.subhead {width: 100%;}
-	}
+  .bulletsFlex {flex-direction: column; align-items: center;}
+	.bulletsImage {text-align: center; margin-bottom: 20px !important;}
+	.bulletsImage img { width: 70%; height: auto;}
+}
 /* --------------- 480px --------------- */
 @media only screen and (max-width: 480px) {
-	}
+  .bulletsImage img {width: 100%; height: auto;}
+}
 	
