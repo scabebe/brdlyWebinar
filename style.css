@@ -81,7 +81,7 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 
 /* ----------------- main content ----------------- */
 .mainContentWrapper { text-align: center; margin-bottom: 85px;}
-.mainContentWrapper::before {background-image: url(images/webinar-bodyBG.png); background-position: center 180%; background-repeat: repeat-x;  opacity:0.4;content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2;}
+.mainContentWrapper::before {background-image: url(images/webinar-bodyBG.png); background-position: center 400%; background-repeat: repeat-x;  opacity:0.4;content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2;}
 .videoWrapper {overflow:hidden; padding-bottom:56.25%; position:relative; height:0; margin-bottom: 55px;}
 .videoWrapper iframe{ left:0; top:0; height:100%; width:100%; position:absolute;}
 .mainContentWrapper .yellowBtn {margin-bottom: 125px;}
@@ -109,9 +109,10 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 .blueBtn a {background: #005587; font-size: 16px; line-height: 22px; font-weight: 600; display: inline-block; color: #ffffff; text-decoration: none; padding: 18px 70px 18px 35px; border-radius: 5px; background-image: url("images/webinar-blueBtn-arrow.png"); background-position: 85% center; background-repeat: no-repeat;}
 
 /* ----------------- logo carousel ----------------- */
-.logoCarouselWrapper {}
-.logoCarouselWrapper-title {}
-.logoCarouselContainer {}
+.logoCarouselWrapper {padding: 190px 0;}
+.logoCarouselWrapper-title {font-size: 32px; line-height: 43px; color: #63666A; text-align: center; width: 675px; margin: 0 auto 55px;}
+.logoCarouselContainer {width: 100%; margin: 0 auto;}
+.slick-slide {margin: 0 30px;}
 
 
 /* ----------------- footer ----------------- */
@@ -147,7 +148,10 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 }
 /* --------------- 768px --------------- */
 @media only screen and (max-width: 768px) {
+  .headerCopyWrapper {padding: 45px 0 50px;}
+  h1.headline {font-size: 28px; line-height: 36px; }
   h2.subhead {width: 100%;}
+  .mainContentCopy {font-size: 20px; line-height: 28px;}
   .bulletsFlex {flex-direction: column; align-items: center;}
 	.bulletsImage {text-align: center; margin-bottom: 20px !important;}
 	.bulletsImage img { width: 70%; height: auto;}
@@ -155,7 +159,10 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 	.pullquoteContent {order: 2; grid-template-columns: 20px auto 20px;}
 	.quoteLogo {left: 35%;}
 	.footerContent {width: 100%;}
-	.footerWrapper {padding: 60px 0;}
+  .footerWrapper {padding: 60px 0;}
+  .logoCarouselWrapper-title {width: 100%;}
+  .mainContentWrapper .yellowBtn {margin-bottom: 50px;}
+  .bulletsWithImageWrapper {margin-bottom: 45px;}
 }
 /* --------------- 480px --------------- */
 @media only screen and (max-width: 480px) {
