@@ -81,19 +81,10 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 
 /* ----------------- main content ----------------- */
 .mainContentWrapper { text-align: center; margin-bottom: 85px;}
-.mainContentWrapper::before {background-image: url(images/webinar-bodyBG.png); background-position: center 180%; background-repeat: repeat-x;  opacity:0.4;
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -2;}
-  
+.mainContentWrapper::before {background-image: url(images/webinar-bodyBG.png); background-position: center 180%; background-repeat: repeat-x;  opacity:0.4;content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2;}
 .videoWrapper {overflow:hidden; padding-bottom:56.25%; position:relative; height:0; margin-bottom: 55px;}
 .videoWrapper iframe{ left:0; top:0; height:100%; width:100%; position:absolute;}
-.yellowBtn {margin-bottom: 125px;}
+.mainContentWrapper .yellowBtn {margin-bottom: 125px;}
 .yellowBtn a {background: #f1b300; font-size: 16px; line-height: 22px; font-weight: 600; display: inline-block; color: #ffffff; text-decoration: none; padding: 18px 70px 18px 35px; border-radius: 5px; background-image: url("https://go.broadly.com/l/710993/2019-05-15/6hx7/710993/12598/poolCleaners_yellowBtnArrow.png"); background-position: 85% center; background-repeat: no-repeat;}
 .mainContentCopy  {font-size: 25px; line-height: 40px; color: #63666A;}
 
@@ -107,8 +98,44 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 .bullets ul li {background-image: url('images/webinar-logos-Checkmark.svg'); background-repeat: no-repeat; background-size: 30px auto; background-position:0 0; margin-bottom: 24px; padding-bottom: 6px; padding-left: 40px;}
 .bullets ul li:last-of-type {margin-bottom: 0;}
 
+/* ----------------- pullquote ----------------- */
+.pullquoteGrid {display: grid; grid-template-columns: auto 775px;}
+.pullquoteContent {background-color: #009cde; background-image: url("https://go.broadly.com/l/710993/2019-05-15/6hx3/710993/12596/poolCleaners_triangleOverlay.svg"); background-repeat: no-repeat; background-size: cover; display: grid;grid-template-columns: auto 51% 13%; color: #ffffff; padding: 75px 0 50px;}
+.pullquoteContentGrid {grid-column:2 / span 1; position: relative;}
+.quote {font-size: 30px; line-height: 41px; font-weight: 700; font-style: italic; margin:0 0 15px; }
+.quoteAuthor {margin-bottom: 22px;}
+.quoteLogo {position: absolute; right: 0; bottom: 0;}
+.pullqouteImg img {width: 100%; height: 100%; object-fit: cover;}
+.blueBtn a {background: #005587; font-size: 16px; line-height: 22px; font-weight: 600; display: inline-block; color: #ffffff; text-decoration: none; padding: 18px 70px 18px 35px; border-radius: 5px; background-image: url("images/webinar-blueBtn-arrow.png"); background-position: 85% center; background-repeat: no-repeat;}
+
+/* ----------------- logo carousel ----------------- */
+.logoCarouselWrapper {}
+.logoCarouselWrapper-title {}
+.logoCarouselContainer {}
 
 
+/* ----------------- footer ----------------- */
+.footerWrapper {color: #ffffff; background: #63666a; padding: 90px 0 75px; text-align: center;}
+.footerContent {width: 525px; margin: 0 auto;}
+.footerWrapper h3 {margin-bottom: 20px;}
+.footerCTA {margin-bottom: 50px;}
+.footerLogo {margin-bottom: 10px;}
+
+
+/* --------------- 1700px --------------- */
+@media only screen and (max-width: 1700px) {
+	.pullquoteContent {grid-template-columns: 13% 74% 13%;}
+}
+/* --------------- 1400px --------------- */
+@media only screen and (max-width: 1400px) {
+	.pullquoteGrid {grid-template-columns: auto 50%;}
+  .quoteLogo {left: 0; top: -100px;}
+  .quoteLogo img {width: 150px; height: auto;}
+}
+/* --------------- 1200px --------------- */
+@media only screen and (max-width: 1200px) {
+	.integrationsLogosGrid {grid-gap: 20px;}
+}
 /* --------------- 1024px --------------- */
 @media only screen and (max-width: 1024px) {
 	.container {width: 100% !important; }
@@ -124,9 +151,16 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
   .bulletsFlex {flex-direction: column; align-items: center;}
 	.bulletsImage {text-align: center; margin-bottom: 20px !important;}
 	.bulletsImage img { width: 70%; height: auto;}
+	.pullquoteGrid {grid-template-columns: auto;}
+	.pullquoteContent {order: 2; grid-template-columns: 20px auto 20px;}
+	.quoteLogo {left: 35%;}
+	.footerContent {width: 100%;}
+	.footerWrapper {padding: 60px 0;}
 }
 /* --------------- 480px --------------- */
 @media only screen and (max-width: 480px) {
   .bulletsImage img {width: 100%; height: auto;}
+	.quoteLogo {left: 26%;}
+	.footerWrapper h3 {font-size: 23px; line-height: 30px;}
 }
 	
