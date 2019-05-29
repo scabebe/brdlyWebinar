@@ -130,7 +130,7 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 /* --------------- 1400px --------------- */
 @media only screen and (max-width: 1400px) {
 	.pullquoteGrid {grid-template-columns: auto 50%;}
-  .quoteLogo {left: 0; top: -100px;}
+  .quoteLogo {left: 0; top: 0; position: relative; margin: 0 0 20px;}
   .quoteLogo img {width: 150px; height: auto;}
 }
 /* --------------- 1200px --------------- */
@@ -144,7 +144,8 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 	.left {width: 100% !important; float: none !important;}
 	.right {width: 100% !important; float: none !important;}
 	.clearfloats {clear: both !important;}
-	.bulletsFlex {align-items: flex-start;}
+  .bulletsFlex {align-items: flex-start;}
+  .quote { font-size: 24px; line-height: 30px;}
 }
 /* --------------- 768px --------------- */
 @media only screen and (max-width: 768px) {
@@ -156,10 +157,11 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 	.bulletsImage {text-align: center; margin-bottom: 20px !important;}
 	.bulletsImage img { width: 70%; height: auto;}
 	.pullquoteGrid {grid-template-columns: auto;}
-	.pullquoteContent {order: 2; grid-template-columns: 20px auto 20px;}
-	.quoteLogo {left: 35%;}
+  .pullquoteContent {order: 2; grid-template-columns: 20px auto 20px; padding: 50px 0;}
+  .quoteLogo {text-align:center;}
 	.footerContent {width: 100%;}
   .footerWrapper {padding: 60px 0;}
+  .logoCarouselWrapper {padding: 70px 0;}
   .logoCarouselWrapper-title {width: 100%;}
   .mainContentWrapper .yellowBtn {margin-bottom: 50px;}
   .bulletsWithImageWrapper {margin-bottom: 45px;}
@@ -167,7 +169,7 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 /* --------------- 480px --------------- */
 @media only screen and (max-width: 480px) {
   .bulletsImage img {width: 100%; height: auto;}
-	.quoteLogo {left: 26%;}
-	.footerWrapper h3 {font-size: 23px; line-height: 30px;}
+  .footerWrapper h3 {font-size: 23px; line-height: 30px;}
+  .quote { font-size: 20px; line-height: 26px;}
 }
 	
