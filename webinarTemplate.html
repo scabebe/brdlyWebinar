@@ -111,8 +111,8 @@ h1.headline {color: #63666A; font-size: 47px; line-height: 50px; font-weight: bo
 h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; margin: 0 auto;}
 
 /* ----------------- main content ----------------- */
+.topWRapper::before {background-image: url(https://go.broadly.com/l/710993/2019-06-06/dmtg/710993/15679/webinar_bodyBG.jpg); background-position: center top; background-repeat: repeat-x;  opacity:1; content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2;}
 .mainContentWrapper { text-align: center; margin-bottom: 85px;}
-.mainContentWrapper::before {background-image: url(https://go.broadly.com/l/710993/2019-05-28/cvpj/710993/14339/webinar_bodyBG.png); background-position: center 400%; background-repeat: repeat-x;  opacity:0; content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; z-index: -2;}
 .videoWrapper {overflow:hidden; padding-bottom:56.25%; position:relative; height:0; margin-bottom: 55px;border: solid 14px #009CDE;}
 .videoWrapper iframe{ left:0; top:0; height:100%; width:100%; position:absolute;}
 .mainContentWrapper .yellowBtn {margin-bottom: 125px;}
@@ -218,25 +218,26 @@ h2.subhead {color: #63666A; font-size: 19px; line-height: 25px; width: 600px; ma
 			</div>
 		</div>
 	</header>
-
-		<section class="headerCopyWrapper">
-			<div class="container">
-				<div class="row">
-					<h1 class="headline" pardot-region="headline">Grow Your Automotive Business Today</h1>
-					<h2 class="subhead" pardot-region="subhead">Watch the webinar to learn how Broadly supercharges Automotive businesses from a single, powerful application</h2>
-				</div>
+	<div class="topWRapper">
+			<section class="headerCopyWrapper">
+					<div class="container">
+						<div class="row">
+							<h1 class="headline" pardot-region="headline">Grow Your Automotive Business Today</h1>
+							<h2 class="subhead" pardot-region="subhead">Watch the webinar to learn how Broadly supercharges Automotive businesses from a single, powerful application</h2>
+						</div>
+					</div>
+				</section>
+				<section class="mainContentWrapper">
+					<div class="container">
+						<div class="row">
+							<div class="videoWrapper" pardot-region="video"><iframe width="1019" height="573" src="https://www.youtube.com/embed/l81K59_ZmHY" frameborder="0" allowfullscreen></iframe></div>
+							<div class="yellowBtn" pardot-region="video CTA"><a href="https://broadly.com/schedule-demo/" target="_blank">REQUEST A DEMO</a></div>
+							<div class="mainContentCopy" pardot-region="video copy">Your customers are starting their automotive shopping online. Broadly enhances your online presence to attract new customers and enables real-time web-chat and text to help you connect with customers when they are searching for your services.</div>
+		
+						</div>
+					</div>
+				</section>
 			</div>
-		</section>
-		<section class="mainContentWrapper">
-			<div class="container">
-				<div class="row">
-					<div class="videoWrapper" pardot-region="video"><iframe width="1019" height="573" src="https://www.youtube.com/embed/l81K59_ZmHY" frameborder="0" allowfullscreen></iframe></div>
-					<div class="yellowBtn" pardot-region="video CTA"><a href="https://broadly.com/schedule-demo/" target="_blank">REQUEST A DEMO</a></div>
-					<div class="mainContentCopy" pardot-region="video copy">Your customers are starting their automotive shopping online. Broadly enhances your online presence to attract new customers and enables real-time web-chat and text to help you connect with customers when they are searching for your services.</div>
-
-				</div>
-			</div>
-		</section>
 		<article class="bulletsWithImageWrapper">
 				<div class="container" style="overflow: auto;">
 					<div class="row bulletsFlex">
