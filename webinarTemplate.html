@@ -305,7 +305,15 @@ jQuery(window).load(function(){
 	jQuery("#pageStyles").html(strin);
 });
 </script>
-
+<script>
+	jQuery(window).load(function(){
+		var strin;
+		strin = jQuery(".pullqouteImg").html();
+		strin = strin.replace("<p>", "").replace("</p>", "");
+		jQuery(".pullqouteImg").html(strin);
+	});
+	</script>
+	
 <div id="pageStyles" pardot-region="page styles" style="z-index: 999;"><style></style></div>
 <script type="text/javascript" src="https://go.broadly.com/l/710993/2019-05-28/cvq6/710993/14357/slick.min.js"></script>	
 <script>
@@ -335,6 +343,7 @@ jQuery(window).load(function(){
     }
   ]
 			});
-    });</script>
+    });
+	</script>
 </body>
 </html>
